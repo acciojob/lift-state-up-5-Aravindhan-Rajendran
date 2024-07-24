@@ -11,7 +11,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Parent Component</h1>
       {isLoggedIn ? (
         <p>You are Logged in!</p>
       ) : (
