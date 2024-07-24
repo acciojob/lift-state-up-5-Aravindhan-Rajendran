@@ -1,4 +1,3 @@
-// src/LoginForm.js
 import React from 'react';
 
 function LoginForm({ onLogin }) {
