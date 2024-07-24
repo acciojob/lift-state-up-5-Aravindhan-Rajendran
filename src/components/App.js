@@ -1,13 +1,11 @@
-
 import React from "react";
 import './../styles/App.css';
-
-const App = () => {
-  return (
-    <div>
-        {/* Do not remove the main div */}
-    </div>
-  )
+let logins=document.getElementById("login");
+const login=(logins)=>{
+  if(logins==true){
+    let p=document.createElement("p");
+    p.textContent=`You are Logged in!`;
+  }
 }
 
 export default App
