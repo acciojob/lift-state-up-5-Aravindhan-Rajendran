@@ -3,7 +3,7 @@ import React from 'react';
 function LoginForm({ onLogin }) {
   const handleSubmit = (event) => {
     event.preventDefault();
-    onLogin();
+    onLogin(); // Notify parent to update the login state
   };
 
   return (
