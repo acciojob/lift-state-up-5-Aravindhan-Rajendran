@@ -1,3 +1,4 @@
+// LoginForm.js
 import React from 'react';
 
 function LoginForm({ onLogin }) {
@@ -8,7 +9,7 @@ function LoginForm({ onLogin }) {
 
   return (
     <div>
-      <h2>Login</h2>
+      <h1>Parent Component</h1> {/* This should be in the LoginForm component */}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
