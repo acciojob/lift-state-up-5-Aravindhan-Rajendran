@@ -10,6 +10,7 @@ function App() {
   };
 
   return (
+    <h1>Parent Component</h1>
     <div className="App">
       {isLoggedIn ? (
         <h1>You are Logged in!</h1>
