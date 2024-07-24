@@ -7,8 +7,8 @@ function LoginForm({ onLogin }) {
   };
 
   return (
-    <h1>Parent Component
     <div>
+      <h1>Parent Component</h1> {/* Added h1 tag here */}
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
