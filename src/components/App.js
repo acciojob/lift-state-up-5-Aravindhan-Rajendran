@@ -1,4 +1,3 @@
-// src/App.js
 import React, { useState } from 'react';
 import LoginForm from './LoginForm';
 import './styles/App.css';
