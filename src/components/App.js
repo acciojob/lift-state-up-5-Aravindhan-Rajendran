@@ -10,10 +10,9 @@ function App() {
   };
 
   return (
-    <h1>Parent Component</h1>
     <div className="App">
       {isLoggedIn ? (
-        <h1>You are Logged in!</h1>
+        <h1>You are Logged in!</h1> // Displayed after login
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
