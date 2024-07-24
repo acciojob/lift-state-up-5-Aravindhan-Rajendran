@@ -5,6 +5,7 @@ import './styles/App.css';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
+  // Handler to update the login state
   const handleLogin = () => {
     setIsLoggedIn(true);
   };
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? (
-        <p>You are Logged in!</p>
+        <h1>You are Logged in!</h1> // Adjusted to match test expectation
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
