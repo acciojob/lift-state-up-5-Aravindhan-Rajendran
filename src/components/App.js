@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoginForm from '../index.js';
+import LoginForm from './components/LoginForm'; // Adjust path as needed
 import './styles/App.css';
 
 function App() {
@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? (
-        <h1>You are Logged in!</h1> // Ensure this matches your test expectation
+        <h1>You are Logged in!</h1>
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
