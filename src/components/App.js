@@ -1,11 +1,25 @@
-import React from "react";
-import './../styles/App.css';
-let logins=document.getElementById("login");
-const login=(logins)=>{
-  if(logins==true){
-    let p=document.createElement("p");
-    p.textContent=`You are Logged in!`;
-  }
+// src/App.js
+import React, { useState } from 'react';
+import LoginForm from './LoginForm';
+import './styles/App.css';
+
+function App() {
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  return (
+    <div className="App">
+      <h1>Parent Component</h1>
+      {isLoggedIn ? (
+        <p>You are Logged in!</p>
+      ) : (
+        <LoginForm onLogin={handleLogin} />
+      )}
+    </div>
+  );
 }
 
-export default App
+export default App;
