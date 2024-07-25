@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App'; // Ensure this path is correct
-import './styles/App.css'; // Ensure this path is correct
+import App from './components/App';
+import './styles/App.css'; // Correct path to CSS file
 
 ReactDOM.render(<App />, document.getElementById('root'));
