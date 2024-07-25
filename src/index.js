@@ -1,27 +1,6 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
+import './styles/index.css';
 
-function LoginForm({ onLogin }) {
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    onLogin(); // Notify parent to update the login state
-  };
-
-  return (
-    <div>
-      <h1>Parent Component</h1> {/* Added h1 tag here */}
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label htmlFor="username">Username:</label>
-          <input type="text" id="username" required />
-        </div>
-        <div>
-          <label htmlFor="password">Password:</label>
-          <input type="password" id="password" required />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
-  );
-}
-
-export default LoginForm;
+ReactDOM.render(<App />, document.getElementById('root'));
