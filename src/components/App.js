@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import LoginForm from './LoginForm'; // Adjust path if necessary
-import './styles/App.css'; // Correct path to CSS file
+import '../styles/App.css'; // Correct path to CSS file
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
