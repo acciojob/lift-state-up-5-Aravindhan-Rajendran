@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import LoginForm from './components/LoginForm'; // Adjust path as needed
+import LoginForm from './LoginForm'; // Adjust the path based on your file structure
 import './styles/App.css';
 
 function App() {
