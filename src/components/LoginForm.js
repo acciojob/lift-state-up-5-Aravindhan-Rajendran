@@ -3,12 +3,12 @@ import React from 'react';
 function LoginForm({ onLogin }) {
   const handleSubmit = (event) => {
     event.preventDefault();
-    onLogin(); // Notify parent to update the login state
+    onLogin(); 
   };
 
   return (
     <div>
-      <h1>Login Form</h1> {/* Changed text for clarity */}
+      <h1>Parent Component</h1> 
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="username">Username:</label>
