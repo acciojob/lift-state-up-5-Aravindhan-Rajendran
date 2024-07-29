@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import LoginForm from './LoginForm'; // Adjust path if necessary
-import '../styles/App.css'; // Correct path to CSS file
+import LoginForm from './LoginForm'; 
+import '../styles.App.css';
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -12,7 +12,10 @@ function App() {
   return (
     <div className="App">
       {isLoggedIn ? (
-        <h1>You are Logged in!</h1> // Displayed after login
+        <>
+          <h1>Parent Component</h1>
+          <p>You are Logged in!</p>
+        </>
       ) : (
         <LoginForm onLogin={handleLogin} />
       )}
